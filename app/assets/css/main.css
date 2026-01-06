@@ -1,0 +1,17 @@
+/* This file is linked to every app page because it is set in `nuxt.config.json` `css` property (https://nuxt.com/docs/4.x/api/nuxt-config#css) */
+
+:root {
+	/*--main-font-family: 'Badeen Display';*/
+	/* This font variable would not works, because nuxt/fonts does not know how to precess this */
+	--this-is-demo-for-fonts-page: Zain;
+}
+
+.main-css-font {
+	/* This font variable would not works, because nuxt/fonts does not know how to precess this. This would work with Tailwind 4 (see nuxt/fonts docs) */
+	font-family: var(--this-is-demo-for-fonts-page, Zain);
+	color: red;
+}
+
+body {
+	background-color: aliceblue;
+}
