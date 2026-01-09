@@ -31,7 +31,7 @@
 <p class="whole-earth">This font is defined as `Whole Earth` in <code>nuxt.config.json</code> and its a font stored in /public/fonts/Shift-Bold.otf</p>
 
 
-<h2>Interacionalization</h2>
+<h2>I18n</h2>
 
 <p>إليك قول مأثور باللغة العربية set in default font</p>
 <p class="font3">إليك قول مأثور باللغة العربية set in <a>Almendra</a>, but almeda does not support Arabic script, so it felt back to Segoe UI on Windows</p>

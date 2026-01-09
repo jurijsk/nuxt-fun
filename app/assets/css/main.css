@@ -4,12 +4,24 @@
 	/*--main-font-family: 'Badeen Display';*/
 	/* This font variable would not works, because nuxt/fonts does not know how to precess this */
 	--this-is-demo-for-fonts-page: Zain;
+
+	/* But it will work if you do this. First we set font family with desired fornt name, which leads for font to be processed and loaded. 
+	In the second line we used the same name to set it to variable and in the next oine we rever the font back to default;
+	Of course you can do as many pairs a you want. */
+	font-family: Zain;
+	--body-text-font-family: Zain;
+	font-family: none;
 }
 
 .main-css-font {
 	/* This font variable would not works, because nuxt/fonts does not know how to precess this. This would work with Tailwind 4 (see nuxt/fonts docs) */
-	font-family: var(--this-is-demo-for-fonts-page, Zain);
+	font-family: var(--this-is-demo-for-fonts-page);
 	color: red;
+}
+
+.body-text {
+	/* This font variable would not works, because nuxt/fonts does not know how to precess this. This would work with Tailwind 4 (see nuxt/fonts docs) */
+	font-family: var(--body-text-font-family);
 }
 
 body {
