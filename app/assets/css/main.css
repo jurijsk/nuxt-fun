@@ -11,6 +11,10 @@
 	font-family: Zain;
 	--body-text-font-family: Zain;
 	font-family: none;
+
+	/* This should work without the trick above. If config's `font.processCSSVariables` is set to `font-prefixed-only` which is a default value. 
+	  Variable should be prefixed with `font-`*/
+	--font-main: Clash Display;
 }
 
 .main-css-font {
