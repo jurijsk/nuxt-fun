@@ -1,5 +1,10 @@
-<script>
+<script setup lang="ts">
 import '~/assets/css/fonts-page.css';
+useHead({
+	title: 'Nuxt Fun - Fonts',
+	meta: [
+		{ name: 'description', content: 'Nuxt Fun project is hoe I learn about Nuxt' },
+});
 </script>
 <template>
 	<h1>Working with fonts in nuxt</h1>

@@ -3,15 +3,17 @@
 
 [x] checkout https://fonts.nuxt.com/get-started/configuration#processcssvariables and playground for basic css
 
-[ ] try using Layout
-
-[ ] try using useHead
-
-[ ] try using https://nuxt.com/docs/4.x/api/utils/define-page-meta and understand the difference.
+[x] try using useHead. See/useHead
 
 [ ] understand how to use `@nuxtjs/i18n`
 
-__________________________________________________________________________________________________________
+---
+
+[ ] try using https://nuxt.com/docs/4.x/api/utils/define-page-meta and understand the difference.
+
+[ ] try using Layout
+
+
 # Changes
  ### 20.01.2026
   * Learned how `@nuxtjs/fonts` modile's `processCSSVariables` to specify font names indirectly via CSS variables, as apposed to direct `font-family` attribute in CSS classes. CSS variables must be prefixed with `font-`
@@ -21,6 +23,8 @@ ________________________________________________________________________________
 		"editor.defaultFormatter": "Vue.volar"
 	}
 	```
+ * `useHead` allows to set page title, meta attibutes, and load links and run scripts.
+ * `definePageMeta` in not about meta tags one defines in page's head. It allows to define Nuxt specific parameters. For example you can specify which layout to use for the page (default is 'default'), and (re)define the path and seth path aliases. Needs further study.
 
 
 # Nuxt Minimal Starter
