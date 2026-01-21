@@ -3,7 +3,7 @@ import '~/assets/css/fonts-page.css';
 useHead({
 	title: 'Nuxt Fun - Fonts',
 	meta: [
-		{ name: 'description', content: 'Nuxt Fun project is hoe I learn about Nuxt' },
+		{ name: 'description', content: 'Nuxt Fun project is hoe I learn about Nuxt' }]
 });
 </script>
 <template>

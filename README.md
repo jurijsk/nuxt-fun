@@ -5,7 +5,14 @@
 
 [x] try using useHead. See/useHead
 
-[ ] understand how to use `@nuxtjs/i18n`
+[x] understand how to use `@nuxtjs/i18n`
+	[x] The prefix_except_default i18n strategy (used by default) needs defaultLocale to be set.  
+
+[ ] explore prerendering
+
+[ ] implement content loading based on the locale
+
+[ ] deploy to github static pages
 
 ---
 

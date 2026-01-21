@@ -2,7 +2,7 @@
 export default defineNuxtConfig({
 	compatibilityDate: '2025-07-15',
 	devtools: { enabled: true },
-	modules: ['@nuxt/fonts'], //see /fonts page
+	modules: ['@nuxt/fonts', '@nuxtjs/i18n'], //see /fonts page
 	fonts: {
 		families: [
 			// this font is used on /fonts page.
@@ -12,6 +12,14 @@ export default defineNuxtConfig({
 		// Default value is "font-prefixed-only" 
 		// Setting it to `true` can lead to performance hitt
 		//processCSSVariables: 'font-prefixed-only'
+	},
+	i18n: {
+		defaultLocale: 'en',
+		locales: [
+			{ code: 'de', name: 'Deutsch', file: 'de.json' },
+			{ code: 'en', name: 'English', file: 'en.json' },
+			{ code: 'da', name: 'Dansk', file: 'da.json' },
+		]
 	},
 	css: ['~/assets/css/main.css']
 });

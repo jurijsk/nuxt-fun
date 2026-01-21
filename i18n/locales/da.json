@@ -1,0 +1,35 @@
+{
+	"welcome": "Velkommen",
+	"experince": [
+		{
+			"title": "da:Product Design",
+			"description": "Experience 1",
+			"keySkills": [
+				"skill1",
+				"skill2",
+				"skill 3"
+			],
+			"dates": "1000 per day"
+		},
+		{
+			"title": "Prototyping",
+			"description": "Experience 2",
+			"keySkills": [
+				"skill3",
+				"skill2",
+				"skill 3"
+			],
+			"dates": "800 per day"
+		},
+		{
+			"title": "Coding",
+			"description": "Experience 3",
+			"keySkills": [
+				"skill1",
+				"skill2",
+				"skill 3"
+			],
+			"dates": "900 per day"
+		}
+	]
+}
