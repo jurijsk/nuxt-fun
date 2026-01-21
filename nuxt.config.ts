@@ -1,7 +1,10 @@
 // https://nuxt.com/docs/api/configuration/nuxt-config
 export default defineNuxtConfig({
 	compatibilityDate: '2025-07-15',
-	devtools: { enabled: true },
+	devtools: { enabled: false },
+	features: {
+		noScripts: 'production' //true | 'all' | false
+	},
 	modules: ['@nuxt/fonts', '@nuxtjs/i18n'], //see /fonts page
 	fonts: {
 		families: [
