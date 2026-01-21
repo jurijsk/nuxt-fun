@@ -43,5 +43,5 @@ https://router.vuejs.org/guide/essentials/active-links#:~:text=to%20active%20lin
 https://stackoverflow.com/a/46085519/4416181
 
 [2]
-
+https://stackoverflow.com/questions/78841290/iteration-v-for-over-arrays-defined-on-i18nv9-with-vue3
 -->

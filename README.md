@@ -6,7 +6,9 @@
 [x] try using useHead. See/useHead
 
 [x] understand how to use `@nuxtjs/i18n`
-	[x] The prefix_except_default i18n strategy (used by default) needs defaultLocale to be set.  
+	[x] The prefix_except_default i18n strategy (used by default) needs defaultLocale to be set. 
+
+[x] exploring /shared/ folder https://nuxt.com/docs/4.x/directory-structure/shared
 
 [ ] explore prerendering
 
@@ -22,6 +24,9 @@
 
 
 # Changes
+ ### 21.01.2026
+ * Learned how to use auto-import from `/shared/types/` and `/shared/types`. vs code with show error that somethig can not ve resolved untill you run dev server.
+
  ### 20.01.2026
   * Learned how `@nuxtjs/fonts` modile's `processCSSVariables` to specify font names indirectly via CSS variables, as apposed to direct `font-family` attribute in CSS classes. CSS variables must be prefixed with `font-`
   * Configured formatter for *.vue files. This can be done from vscode command palette
