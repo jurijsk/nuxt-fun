@@ -5,7 +5,7 @@ export default defineNuxtConfig({
 	features: {
 		noScripts: 'production' //true | 'all' | false
 	},
-	modules: ['@nuxt/fonts', '@nuxtjs/i18n'], //see /fonts page
+	modules: ['@nuxt/fonts', '@nuxtjs/i18n', 'nuxt-studio', '@nuxt/content'],
 	fonts: {
 		families: [
 			// this font is used on /fonts page.
@@ -23,6 +23,9 @@ export default defineNuxtConfig({
 			{ code: 'en', name: 'English', file: 'en.json' },
 			{ code: 'da', name: 'Dansk', file: 'da.json' },
 		]
+	},
+	content: {
+		experimental: { nativeSqlite: true },
 	},
 	css: ['~/assets/css/main.css']
 });

@@ -13,13 +13,21 @@
 [x] explore prerendering
 [x] explore noScripts property 
 
+[ ] explore nuxt content
+	[ ] find a way to fallback to the content from default locale if localizaed content does not exist. See /first-content and switch to /de or /da
+	[ ] check how it works with prerender
+
 [ ] implement content loading based on the locale
 
-[ ] deploy to github [static pages]([ ] explore config.features.inlineStyles) 
+
+
+[ ] deploy to github static pages: https://nuxt.com/deploy/github-pages
 
 ---
 
 [x] try using https://nuxt.com/docs/4.x/api/utils/define-page-meta and understand the difference.
+
+[ ] explore config.features.inlineStyles
 
 [ ] explore config.features.inlineStyles
 

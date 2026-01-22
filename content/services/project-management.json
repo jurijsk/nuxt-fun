@@ -1,0 +1,29 @@
+{
+	"en": {
+		"title": "Project management",
+		"description": "Project management description",
+		"skills": [
+			"service skill one ",
+			"service skill two"
+		],
+		"category": "category one"
+	},
+	"de": {
+		"title": "Project management",
+		"description": "Project management description",
+		"skills": [
+			"service skill one ",
+			"service skill two"
+		],
+		"category": "category one"
+	},
+	"da": {
+		"title": "Project management",
+		"description": "Project management description",
+		"skills": [
+			"service skill one ",
+			"service skill two"
+		],
+		"category": "category one"
+	}
+}
