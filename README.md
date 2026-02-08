@@ -20,7 +20,6 @@
 [ ] implement content loading based on the locale
 
 
-
 [ ] deploy to github static pages: https://nuxt.com/deploy/github-pages
 
 ---
@@ -63,6 +62,9 @@ read on:
 https://dev.to/ahmed_niazy/how-to-fix-vue-hydration-mismatch-1dl
 https://ryanclements.dev/posts/fixing-nuxt-hydration-mismatches-in-the-real-world
 https://vuejs.org/guide/scaling-up/ssr#hydration-mismatch
+https://stackoverflow.com/questions/47862591/vuejs-error-the-client-side-rendered-virtual-dom-tree-is-not-matching-server-re/67978474#67978474
+https://www.lichter.io/articles/vue-hydration-error/
+
 
 # Nuxt Minimal Starter
 
