@@ -1,23 +1,24 @@
 <script setup lang="ts">
-
 const title = ref({ name: 'Nuxt Fun - Index' });
-//one way to load the data from based on locale and using enterely by the means of @nuxt/i18n
-//its wicked. use only to deal with small stuff [2]
+// one way to load the data from based on locale and using enterely by the means of @nuxt/i18n
+// its wicked. use only to deal with small stuff [2]
 const experinces = computed(() => $tm('experince') as Experience[]);
 useHead({
-	title: computed(() => title.value.name)
+    title: computed(() => title.value.name)
 });
 </script>
-<template> this is index.vue
-	<hr />
+
+<template>
+	this is index.vue
+	<hr>
 	<h1>{{ $t('welcome') }}</h1>
-	<hr /> the content below rendered using <code>@nuxt/i18n</code> means. <template v-for="experince in experinces">
+	<hr> the content below rendered using <code>@nuxt/i18n</code> means. <template v-for="experince in experinces">
 		<h2>{{ $rt(experince.title) }}</h2>
 		<p>{{ $rt(experince.description) }}</p>
 		<span v-for="skill in experince.keySkills">{{ $rt(skill) }} |</span>
 		<p>{{ $rt(experince.dates) }}</p>
 	</template>
-	<hr />
+	<hr>
 </template>
 
 <!--

@@ -25,10 +25,10 @@ const experiences = <Ref<ExperiencesEnCollectionItem[]>> data;
 
 
 
-//const route = useRoute();
-//const { data: experiences } = await useAsyncData('experiences', () => {
+// const route = useRoute();
+// const { data: experiences } = await useAsyncData('experiences', () => {
 //	return queryCollection('experiences').all();
-//});
+// });
 </script>
 <template>
 	<template v-if="experiences">
