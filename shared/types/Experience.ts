@@ -2,8 +2,8 @@
 // read more https://nuxt.com/docs/4.x/directory-structure/shared
 
 export interface Experience {
-    title: string;
-    description: string;
-    keySkills: string[];
-    dates: string;
+	title: string;
+	description: string;
+	keySkills: string[];
+	dates: string;
 }

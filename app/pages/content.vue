@@ -1,17 +1,17 @@
 <script lang="ts" setup>
-import type { Collections, ExperiencesEnCollectionItem } from '@nuxt/content';
+import type { Collections, ExperiencesEnCollectionItem } from "@nuxt/content";
 
 
 const { locale, defaultLocale } = useI18n();
 
 
-const { data } = await useAsyncData('experiences-' + locale.value, async () => {
+const { data } = await useAsyncData("experiences-" + locale.value, async () => {
 	// Build collection name based on current locale
 	const collection = ('experiences_' + locale.value) as keyof Collections;
 	const experiences = await queryCollection(collection).all();
 
 	// Optional: fallback to default locale if content is missing
-	if(!experiences && locale.value !== defaultLocale) {
+if(!experiences && locale.value !== defaultLocale) {
 		const dedaultCollection = 'experiences_' + defaultLocale as keyof Collections;
 		return await queryCollection(dedaultCollection).all();
 	}

@@ -2,5 +2,5 @@
 // read more https://nuxt.com/docs/4.x/directory-structure/shared
 
 export const capitalize = (input: string) => {
-    return input[0] ? input[0].toUpperCase() + input.slice(1) : '';
+	return input[0] ? input[0].toUpperCase() + input.slice(1) : '';
 };

@@ -4,7 +4,7 @@ const title = ref({ name: 'Nuxt Fun - Index' });
 // its wicked. use only to deal with small stuff [2]
 const experinces = computed(() => $tm('experince') as Experience[]);
 useHead({
-    title: computed(() => title.value.name)
+	title: computed(() => title.value.name)
 });
 </script>
 

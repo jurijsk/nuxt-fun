@@ -2,7 +2,7 @@
 const { locale } = useI18n();
 
 const { data: services } = await useAsyncData('services', () => {
-    return queryCollection('services').all();
+	return queryCollection('services').all();
 });
 
 const localServices = computed(() => services.value?.map(services => services[locale.value]));

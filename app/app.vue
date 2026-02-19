@@ -3,17 +3,17 @@
 import { computed } from 'vue';
 
 useHead({
-    title: 'Nuxt Fun'
+	title: 'Nuxt Fun'
 });
 const router = useRouter();
 
 const allRoutes = computed(() => {
-    const routes = router.getRoutes();
-    return routes
-        .filter(r => r.path && typeof r.path === 'string')
-        .filter(r => !r.path.includes('(') && !r.path.includes(':') && !r.path.startsWith('/_'))
-        .filter(r => !r.path.startsWith('/da') && !r.path.startsWith('/de'))
-        .map(r => ({ name: r.name as string | undefined, path: r.path }));
+	const routes = router.getRoutes();
+	return routes
+		.filter(r => r.path && typeof r.path === 'string')
+		.filter(r => !r.path.includes('(') && !r.path.includes(':') && !r.path.startsWith('/_'))
+		.filter(r => !r.path.startsWith('/da') && !r.path.startsWith('/de'))
+		.map(r => ({ name: r.name as string | undefined, path: r.path }));
 });
 </script>
 
