@@ -1,6 +1,13 @@
 // https://nuxt.com/docs/api/configuration/nuxt-config
 export default defineNuxtConfig({
-	modules: ['@nuxt/fonts', '@nuxtjs/i18n', 'nuxt-studio', '@nuxt/content', '@nuxt/eslint'],
+	modules: [
+				 '@nuxt/fonts',
+				 '@nuxtjs/i18n',
+				// 'nuxt-studio', //have to configure it first, becuase vitest does fails to run without propper configuration of nuxt-studio ... annoying
+				 '@nuxt/content',
+				 '@nuxt/eslint',
+				 '@nuxt/test-utils'
+	],
 	devtools: { enabled: true },
 	css: ['~/assets/css/main.css'],
 	content: {
