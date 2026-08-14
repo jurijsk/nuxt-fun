@@ -4,10 +4,10 @@ import withNuxt from './.nuxt/eslint.config.mjs';
 export default withNuxt([
 	{
 		rules: {
-			'@stylistic/semi': ['error', 'always'],
-			'@stylistic/indent': ['error', 'tab'],
-			'@stylistic/quotes': ['error', 'single'],
-			'@stylistic/comma-dangle': ['error', 'never'],
+			'semi': ['error', 'always'],
+			'indent': ['error', 'tab'],
+			'quotes': ['error', 'single'],
+			'comma-dangle': ['error', 'never'],
 			'no-debugger': 'off',
 			'vue/no-multiple-template-root': 'warn'
 		}

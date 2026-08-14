@@ -60,5 +60,6 @@
 			"severity": "off",
 			"fixable": true
 		}
-	]
+	],
+	"workbench.colorTheme": "Quiet Light"
 }

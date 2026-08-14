@@ -1,0 +1,54 @@
+<html lang="en">
+    <body>
+        <video id="video" style="display:none;" autoplay></video>
+        <canvas id="screenshot" width="600px" height="400px"></canvas>
+        <button id="capture">Take screenshot</button>
+
+		nope, this will not work.
+
+        <script>
+            const videoElem = document.getElementById("video");
+            const canvas = document.getElementById("screenshot");
+            const context = canvas.getContext('2d');
+
+            //We don't want the audio, and we want to see the user's cursor
+            const displayMediaOptions = {
+                video: {
+                    cursor: "always"
+                },
+                audio: false
+            };
+
+            async function takeScreenshot() {
+                try {
+                    //There, we get a full screen capture in real time using the WebRTC API.
+                    //And we set the video source with the stream in srcObject.
+                    videoElem.srcObject = await navigator.mediaDevices.getDisplayMedia(
+                        displayMediaOptions
+                    );      
+                    
+                } catch(err) {
+                    console.error("Error: " + err, err);
+                }
+            }
+
+            //We want to take our screenshot when our stream is ready
+            videoElem.addEventListener('playing', () => {
+                
+                //If we are too fast, we will get the browser-prompted window
+                //in the screenshot, so we add a little delay.
+                setTimeout(() => {
+                    context.drawImage(videoElem, 0, 0, canvas.width, canvas.height);
+                    //We got our screenshot, we can stop to capture the user's screen
+                    let tracks = videoElem.srcObject.getTracks();
+
+                    tracks.forEach(track => track.stop());
+                    videoElem.srcObject = null;
+                    video.pause();
+                }, 500);
+            });
+
+            document.getElementById('capture').addEventListener('click', takeScreenshot);
+        </script>
+    </body>
+</html>

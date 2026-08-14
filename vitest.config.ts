@@ -7,6 +7,13 @@ export default defineConfig({
 		projects: [
 			{
 				test: {
+					name: 'e2e',
+					include: ['tests/e2e/*.{test,spec}.ts'],
+					environment: 'node'
+				}
+			},
+			{
+				test: {
 					name: 'unit',
 					include: ['tests/unit/*.{test,spec}.ts'],
 					environment: 'node'
@@ -27,7 +34,7 @@ export default defineConfig({
 			})
 		],
 		coverage: {
-			enabled: true,
+			enabled: false,
 			provider: 'v8'
 		}
 	}
